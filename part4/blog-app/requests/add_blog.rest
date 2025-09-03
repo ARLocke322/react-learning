@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/blogs HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvYiIsImlkIjoiNjhiODA2ODNlYjg2OWZjMWFmMDEwMGRmIiwiaWF0IjoxNzU2ODkwNzcwLCJleHAiOjE3NTY4OTQzNzB9.I40H5RXNnzDBkeyQURiJR-Iny7Twgtr-ScGK9KYpvE0
+
+{
+    "title": "bobsblog",
+    "author": "Bob",
+    "url": "bobsblog.com"
+}

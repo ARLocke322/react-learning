@@ -2,7 +2,7 @@
 //const array = require('lodash/array')
 //const object = require('lodash/fp/object')
 
-const dummy = (blogs) => {
+const dummy = () => {
     return 1
 }
 
