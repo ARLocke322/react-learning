@@ -1,9 +1,11 @@
-POST http://localhost:3003/api/blogs HTTP/1.1
+PUT http://localhost:3003/api/blogs/68b92f37f73a771c026a61c8 HTTP/1.1
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvYiIsImlkIjoiNjhiODA2ODNlYjg2OWZjMWFmMDEwMGRmIiwiaWF0IjoxNzU2ODkwNzcwLCJleHAiOjE3NTY4OTQzNzB9.I40H5RXNnzDBkeyQURiJR-Iny7Twgtr-ScGK9KYpvE0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvYiIsImlkIjoiNjhiODA2ODNlYjg2OWZjMWFmMDEwMGRmIiwiaWF0IjoxNzU2OTY2NjkyLCJleHAiOjE3NTY5NzAyOTJ9.UWvLpy90pA9GjzQmvAa2b2tNCZ7foYpxr4WP2UM8yCU
 
 {
     "title": "bobsblog",
     "author": "Bob",
-    "url": "bobsblog.com"
+    "url": "bobsblog.com",
+    "likes": "1",
+    "user": {"id": "68b80683eb869fc1af0100df", "name":"Superuser", "username":"root"}
 }
