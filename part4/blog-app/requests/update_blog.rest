@@ -1,9 +1,14 @@
-PUT http://localhost:3003/api/blogs/68b2a486ebc0bdb2041d0dbb HTTP/1.1
+PUT http://localhost:3003/api/blogs/68b98e96cb24346fb305114b HTTP/1.1
 Content-Type: application/json
 
 {
-    "title": "Work notes 3",
-    "author": "Gina",
+    "title": "a note created by playwright",
+    "author": "playwright",
     "url": "work.com",
-    "likes": "1"
+    "url": "playwright.com",
+    "comments": ["hello", "goodbye"]
 }
+
+
+    
+    

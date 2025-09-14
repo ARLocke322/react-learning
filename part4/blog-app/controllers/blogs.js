@@ -9,7 +9,7 @@ blogsRouter.get('/', async (request, response) => {
 })
 
 blogsRouter.get('/:id', async (request, response) => {
-    const blog = await Blog.findById(request.params.id)
+    const blog = await Blog.findById(request.params.id).populate('user', { username: 1, name: 1 })
     if (blog) {
         response.json(blog)
     } else {
@@ -51,10 +51,10 @@ blogsRouter.delete('/:id', middleware.userExtractor, async (request, response) =
 })
 
 blogsRouter.put('/:id', async (request, response) => {
-    const { title, author, url, likes, user } = request.body
+    const { title, author, url, likes, user, comments } = request.body
     const updatedBlog = await Blog.findByIdAndUpdate(
         request.params.id,
-        { title: title, author: author, url: url, likes: likes, user: user },
+        { title: title, author: author, url: url, likes: likes, user: user, comments: comments },
         { new: true }
     ).populate('user', { username: 1, name: 1 })
     response.json(updatedBlog)

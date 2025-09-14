@@ -1,4 +1,4 @@
-import { useSelector } from 'react-redux'
+import { useNotificationValue } from '../NotificationContext'
 
 const styles = {
     success: {
@@ -22,7 +22,7 @@ const styles = {
 }
 
 const Notification = () => {
-    const { message, type } = useSelector(state => state.notification)
+    const { message, type } = useNotificationValue()
 
     if (!message) return null
 
