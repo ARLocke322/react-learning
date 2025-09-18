@@ -32,7 +32,6 @@ const useResource = (baseUrl) => {
     return response.data
   }
 
-
   const service = {
     create
   }

@@ -12,7 +12,7 @@ import UserContext from './UserContext'
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query'
 import Users from './components/Users'
 import { Routes, Route, Link, useMatch } from 'react-router-dom'
-import User from './components/User'
+import User from './components/UserDetail'
 
 const App = () => {
     const queryClient = useQueryClient()
