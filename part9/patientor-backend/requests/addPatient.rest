@@ -1,0 +1,10 @@
+POST http://localhost:3001/api/patients
+Content-Type: application/json
+
+{
+    "name": "Gina Lott",
+    "dateOfBirth": "2004-07-03",
+    "ssn": "090123-122X",
+    "gender": "female",
+    "occupation": "Student"
+}
