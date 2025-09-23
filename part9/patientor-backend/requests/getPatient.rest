@@ -1,0 +1,1 @@
+GET http://localhost:3001/api/patients/074a4be0-9884-11f0-858a-a30fbb1635e3

@@ -1,0 +1,15 @@
+POST http://localhost:3001/api/patients/074a4be0-9884-11f0-858a-a30fbb1635e3/entries
+Content-Type: application/json
+
+{
+    "type": "Hospital",
+    "description": "Explosive diarrhea",
+    "date": "2025-09-25",
+    "specialist": "Dr. Ching Chong",
+    "discharge": {
+      "date": "2024-03-13",
+      "criteria": "Patient died"
+    },
+    "diagnosisCodes": ["Z57.1", "Z74.3"]
+
+}
